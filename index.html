@@ -44,20 +44,20 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
+                    <a class="nav-link active" aria-current="page" href="./index.html">Catalogo Libri</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Anagrafica Utenti</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-disabled="true">Storico Prestiti</a>
+                    <a class="nav-link" href="#">Storico Prestiti</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-disabled="true">Help</a>
+                    <a class="nav-link" href="#">Help</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
-                  <input class="form-control me-2 bg-light" data-bs-theme="light" type="search" placeholder="Cerca..." aria-label="Search">
+                  <input class="form-control me-2" data-bs-theme="light" type="search" placeholder="Cerca..." aria-label="Search">
                   <button class="btn btn-outline-light" type="submit">Cerca</button>
                 </form>
               </div>
@@ -71,7 +71,7 @@
                 <!-- PRIMA SEZIONE CON TITOLO E BUTTON -->
                 <div class="d-flex justify-content-between mb-4">
                    <span class="fw-semibold fs-3 align-middle">Catalogo Libri</span>
-                   <button type="button" class="btn btn-primary align-middle">Aggiungi Libro</button>
+                   <a type="button" class="btn btn-primary align-middle" href="./new-book.html">Aggiungi Libro</a>
                 </div>
                 <!-- SECONDA SEZIONE CONTENENTE LA TABLE -->
                 <table class="table table-striped amt-fs">
@@ -203,9 +203,30 @@
                     <div class="p-4">
                        <div class="card">
                           <ul class="list-group list-group-flush">
-                              <li class="list-group-item"><input type="checkbox"> Chiamare segreteria</li>
-                              <li class="list-group-item"><input type="checkbox"> Mandare avvisi prestiti scaduti</li>
-                              <li class="list-group-item"><input type="checkbox"> Ordinare nuovi libri</li>
+                              <li class="list-group-item">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="call-secretary">
+                                  <label class="form-check-label" for="call-secretary">
+                                    Chiamare segreteria
+                                  </label>
+                                </div>
+                              </li>
+                              <li class="list-group-item">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="send-advise">
+                                  <label class="form-check-label" for="send-advise">
+                                    Mandare avvisi prestiti scaduti
+                                  </label>
+                                </div>
+                              </li>
+                              <li class="list-group-item">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="order-new-book">
+                                  <label class="form-check-label" for="order-new-book">
+                                    Ordinare nuovi libri
+                                  </label>
+                                </div>
+                              </li>
                           </ul>
                        </div>
                     </div>
