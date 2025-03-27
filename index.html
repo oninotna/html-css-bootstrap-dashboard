@@ -72,6 +72,12 @@
                 <div class="d-flex justify-content-between mb-4">
                    <span class="fw-semibold fs-3 align-middle">Catalogo Libri</span>
                    <a type="button" class="btn btn-primary align-middle" href="./new-book.html">Aggiungi Libro</a>
+
+                   <!-- BUTTON MODALE -->
+                   <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-book">
+                    Aggiungi libro
+                   </button> -->
+                   
                 </div>
                 <!-- SECONDA SEZIONE CONTENENTE LA TABLE -->
                 <table class="table table-striped amt-fs">
@@ -299,6 +305,107 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- PROVA MODALE -->
+    <div class="modal fade" 
+    id="add-book" 
+    data-bs-backdrop="static" 
+    data-bs-keyboard="false" 
+    tabindex="-1" 
+    aria-labelledby="add-book" 
+    aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" 
+            class="btn-close" 
+            data-bs-dismiss="modal" 
+            aria-label="Chiudi"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="fw-semibold fs-3 mb-4">Nuovo Libro</div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="mb-3">
+                    <label for="author-name" class="form-label fw-semibold">Nome Autore</label>
+                    <input type="text" class="form-control fw-semibold" id="author-name" placeholder="Inserisci il nome dell'autore">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="mb-3">
+                    <label for="author-surname" class="form-label fw-semibold">Cognome Autore</label>
+                    <input type="text" class="form-control fw-semibold" id="author-surname" placeholder="Inserisci il cognome dell'autore">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="book-title" class="form-label fw-semibold">Titolo libro</label>
+                    <input type="text" class="form-control fw-semibold" aria-describedby="#info-title" id="book-title" placeholder="Inserisci il titolo del libro">
+                    <div id="info-title" class="form-text">
+                      Titolo in versione italiana
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-lg-4"> 
+                  <div class="mb-3">
+                     <label for="book-category" class="form-label fw-semibold">Genere</label>
+                     <select class="form-select fw-semibold" aria-label="Category book">
+                       <option selected>Scegli il genere</option>
+                       <option value="1">Fantasy</option>
+                       <option value="2">Avventura</option>
+                       <option value="3">Storia</option>
+                     </select>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="mb-3">
+                    <label for="publication-year" class="form-label fw-semibold">Anno di pubblicazione</label>
+                    <input type="text" class="form-control fw-semibold" id="publication-year" placeholder="Inserisci l'anno di pubblicazione">
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="mb-5">
+                    <label for="isbn-code" class="form-label fw-semibold">ISBN#</label>
+                    <input type="text" class="form-control fw-semibold" id="isbn-code" placeholder="Inserisci il codice ISBN#">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <hr>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="mt-3 mb-3">
+                    <label for="book-note" class="form-label fw-semibold">Note</label>
+                    <textarea class="form-control fw-semibold text-secondary" id="book-note" rows="3">Inserisci eventuali note sul libro</textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="digital-copy">
+                    <label class="form-check-label fw-semibold" for="digital-copy">
+                      Disponibile anche in digitale
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <a type="button" class="btn btn-primary mb-5" href="./index.html">Aggiungi Libro</a>
+                </div>
+              </div>    
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
